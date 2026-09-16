@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.pipeworx-io/poshmark-comps",
+  "title": "Poshmark Comps",
+  "description": "Poshmark Comps — sold-price search on the public Poshmark marketplace",
+  "version": "0.1.0",
+  "websiteUrl": "https://pipeworx.io/packs/poshmark-comps",
+  "repository": {
+    "url": "https://github.com/pipeworx-io/mcp-poshmark-comps",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://gateway.pipeworx.io/poshmark-comps/mcp"
+    }
+  ]
+}
