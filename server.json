@@ -3,7 +3,7 @@
   "name": "io.github.pipeworx-io/poshmark-comps",
   "title": "Poshmark Comps",
   "description": "Poshmark Comps — sold-price search on the public Poshmark marketplace",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "websiteUrl": "https://pipeworx.io/packs/poshmark-comps",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-poshmark-comps",
