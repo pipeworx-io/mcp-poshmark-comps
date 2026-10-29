@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-poshmark-comps",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "Poshmark Comps — sold-price search on the public Poshmark marketplace",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-poshmark-comps": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "poshmark-comps"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-poshmark-comps.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/poshmark-comps",
   "pipeworx": {
-    "sourceHash": "v1-4c7b68a67eaf99ed21ea542db2ff92572ace78a10df74926bd1299e78326061f",
-    "sourceCommit": "4d51421bd010ad9a322c2245b70b401604912eff"
+    "mode": "gateway",
+    "slug": "poshmark-comps",
+    "gatewaySlug": "poshmark-comps",
+    "sourceHash": "v1-29bd0d790ef5f666bcb6151322868f99df239f44aac527828becaaf8b7e29091",
+    "sourceCommit": "6bae4cfa7b6a73bbe014dc8820a19c80c842b21e"
   }
 }

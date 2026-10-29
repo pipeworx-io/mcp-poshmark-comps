@@ -1,0 +1,58 @@
+[
+  {
+    "name": "poshmark_sold_search",
+    "description": "Search Poshmark SOLD listings and return realized/ask-at-sale prices — the best open sold-price comp data on Poshmark (no login, no API key). Sourced live from poshmark.com/search?availability=sold_out. Returns up to ~48 results per call (one page, no pagination cursor). `price` is the listing price shown on the sold post, as Poshmark reports it — not an independently verified receipt.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Search text, e.g. \"lululemon align leggings\" or \"coach tabby bag\""
+        },
+        "department": {
+          "type": "string",
+          "description": "Optional department filter as Poshmark spells it, e.g. \"Women\", \"Men\", \"Kids\", \"Home\""
+        },
+        "sort_by": {
+          "type": "string",
+          "description": "relevance (default) | price_desc | price_asc"
+        },
+        "limit": {
+          "type": "number",
+          "description": "Max results to return, 1-48 (default 24)"
+        }
+      },
+      "required": [
+        "query"
+      ]
+    }
+  },
+  {
+    "name": "poshmark_active_search",
+    "description": "Search Poshmark ACTIVE (currently listed, not yet sold) listings — for comparing current ask prices against poshmark_sold_search results. No login, no API key. Returns up to ~48 results per call.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Search text, e.g. \"lululemon align leggings\""
+        },
+        "department": {
+          "type": "string",
+          "description": "Optional department filter, e.g. \"Women\", \"Men\", \"Kids\", \"Home\""
+        },
+        "sort_by": {
+          "type": "string",
+          "description": "relevance (default) | price_desc | price_asc"
+        },
+        "limit": {
+          "type": "number",
+          "description": "Max results to return, 1-48 (default 24)"
+        }
+      },
+      "required": [
+        "query"
+      ]
+    }
+  }
+]
