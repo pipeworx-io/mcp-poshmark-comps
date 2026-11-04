@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-poshmark-comps",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Poshmark Comps — sold-price search on the public Poshmark marketplace",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "poshmark-comps",
     "gatewaySlug": "poshmark-comps",
-    "sourceHash": "v1-29bd0d790ef5f666bcb6151322868f99df239f44aac527828becaaf8b7e29091",
-    "sourceCommit": "6bae4cfa7b6a73bbe014dc8820a19c80c842b21e"
+    "sourceHash": "v1-8cd212ed064c7fcac53cb85942929c2dfaec46d83be737fd32bf0be799a0e996",
+    "sourceCommit": "db27387ed3ef7ec4805d465f7964a7f65f937006"
   }
 }
